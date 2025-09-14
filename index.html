@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Developer & AI Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">BTMI-Hermon Services</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Full Stack Developer & AI Specialist</h1>
+            <p>Transforming ideas into powerful digital solutions with cutting-edge technology</p>
+            <a href="#contact" class="cta-button">Let's Work Together</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🚀 Full Stack Web Development</h3>
+                    <p>Complete web solutions using React, Django, Node.js, and Flask. From responsive frontends to robust backend APIs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🤖 AI & Machine Learning</h3>
+                    <p>Advanced AI solutions, deep learning models, and computer vision applications to automate and optimize your business.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🐍 Python Development</h3>
+                    <p>Custom Python applications, data analysis, automation scripts, and API development using Flask and FastAPI.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📱 Streamlit Applications</h3>
+                    <p>Interactive data apps and dashboards that bring your data to life with beautiful, user-friendly interfaces.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📈 Business Marketing</h3>
+                    <p>Digital marketing strategies and Google Business profile optimization to boost your online presence.</p>
+                </div>
+                <div class="service-card">
+                    <h3>🌐 French Translation</h3>
+                    <p>Professional French-English translation services for documents, websites, and business communications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+                    <ul class="skill-list">
+                        <li>React.js</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & APIs</h3>
+                    <ul class="skill-list">
+                        <li>Django</li>
+                        <li>Node.js</li>
+                        <li>Flask & FastAPI</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Data Science</h3>
+                    <ul class="skill-list">
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Neural Networks</li>
+                        <li>Data Analysis</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <ul class="skill-list">
+                        <li>Streamlit</li>
+                        <li>Google Business</li>
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>Cloud Platforms</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul class="skill-list">
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>Database Design</li>
+                        <li>Data Modeling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>Ready to transform your ideas into reality? Get in touch!</p>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+919157905812">+91 91579 05812</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <p><a href="#">bofiauthier3@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>🌟 Specialization</h3>
+                    <p>Full Stack Development<br>AI/ML Solutions<br>Business Optimization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Gauthier Bofi Bendedji. Crafting digital excellence.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Add click animation to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'translateY(-10px)';
+                }, 150);
+            });
+        });
+
+        // Add typing effect to hero title
+        const heroTitle = document.querySelector('.hero h1');
+        const text = heroTitle.textContent;
+        heroTitle.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                heroTitle.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        
+        setTimeout(typeWriter, 1000);
+    </script>
+</body>
+</html>
