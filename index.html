@@ -3,206 +3,504 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Developer & AI Specialist</title>
+    <title>BTMI Hermon AI - All-in-One Enterprise Automation Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
 </head>
 <body>
-    <div class="floating-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
+    <div class="bg-gradient-blur"></div>
 
-    <header>
-        <nav class="container">
-            <div class="logo">BTMI-Hermon Services</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">BTMI Hermon<span class="logo-accent">.ai</span></span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a href="#login" class="btn btn-tertiary">Sign In</a>
+                <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h1>Full Stack Developer & AI Specialist</h1>
-            <p>Transforming ideas into powerful digital solutions with cutting-edge technology</p>
-            <a href="#contact" class="cta-button">Let's Work Together</a>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="badge">
+                <span class="badge-pill">NEW</span>
+                <span>Introducing Hermon AI 2.0 &bull; Explore Smart Workflows &rarr;</span>
+            </div>
+            <h1>Automate, Scale, & Elevate Your Business with <span class="gradient-text">AI Intelligence</span></h1>
+            <p class="hero-subtitle">The all-in-one SaaS platform designed to streamline operations, predict insights, and supercharge team productivity—all powered by enterprise-grade AI.</p>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>🚀 Full Stack Web Development</h3>
-                    <p>Complete web solutions using React, Django, Node.js, and Flask. From responsive frontends to robust backend APIs.</p>
+            <div class="hero-cta-group">
+                <a href="#pricing" class="btn btn-primary btn-large">Start 14-Day Free Trial</a>
+                <a href="#demo" class="btn btn-secondary btn-large">
+                    <span class="play-icon">&#9654;</span> Book a Live Demo
+                </a>
+            </div>
+
+            <div class="hero-trust-notes">
+                <span>✓ No credit card required</span>
+                <span>✓ 14-day free trial</span>
+                <span>✓ Instant 2-minute setup</span>
+            </div>
+
+            <!-- App Dashboard Preview Mockup -->
+            <div class="dashboard-preview">
+                <div class="dashboard-header">
+                    <div class="window-controls">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-title">BTMI Hermon AI Workspace — Dashboard</div>
                 </div>
-                <div class="service-card">
-                    <h3>🤖 AI & Machine Learning</h3>
-                    <p>Advanced AI solutions, deep learning models, and computer vision applications to automate and optimize your business.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🐍 Python Development</h3>
-                    <p>Custom Python applications, data analysis, automation scripts, and API development using Flask and FastAPI.</p>
-                </div>
-                <div class="service-card">
-                    <h3>📱 Streamlit Applications</h3>
-                    <p>Interactive data apps and dashboards that bring your data to life with beautiful, user-friendly interfaces.</p>
-                </div>
-                <div class="service-card">
-                    <h3>📈 Business Marketing</h3>
-                    <p>Digital marketing strategies and Google Business profile optimization to boost your online presence.</p>
-                </div>
-                <div class="service-card">
-                    <h3>🌐 French Translation</h3>
-                    <p>Professional French-English translation services for documents, websites, and business communications.</p>
+                <div class="dashboard-body">
+                    <div class="dash-sidebar">
+                        <div class="dash-item active">📊 Analytics</div>
+                        <div class="dash-item">🤖 AI Workflow</div>
+                        <div class="dash-item">🔌 Integrations</div>
+                        <div class="dash-item">⚙️ Settings</div>
+                    </div>
+                    <div class="dash-content">
+                        <div class="dash-metrics-grid">
+                            <div class="metric-card">
+                                <span class="metric-label">Automated Tasks</span>
+                                <span class="metric-value">124,890</span>
+                                <span class="metric-change positive">+24.8% this month</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label">Hours Saved</span>
+                                <span class="metric-value">1,420 hrs</span>
+                                <span class="metric-change positive">+18.2% vs target</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label">Efficiency Score</span>
+                                <span class="metric-value">98.4%</span>
+                                <span class="metric-change positive">Top Tier</span>
+                            </div>
+                        </div>
+                        <div class="dash-chart-mock">
+                            <div class="chart-bar" style="--height: 40%"></div>
+                            <div class="chart-bar" style="--height: 65%"></div>
+                            <div class="chart-bar" style="--height: 50%"></div>
+                            <div class="chart-bar" style="--height: 85%"></div>
+                            <div class="chart-bar" style="--height: 70%"></div>
+                            <div class="chart-bar active-bar" style="--height: 95%"></div>
+                            <div class="chart-bar" style="--height: 80%"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
+    <!-- Social Proof & Metrics -->
+    <section class="social-proof">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend Technologies</h3>
-                    <ul class="skill-list">
-                        <li>React.js</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>Responsive Design</li>
-                        <li>UI/UX Design</li>
-                    </ul>
+            <p class="social-proof-title">Trusted by leading teams and fast-growing enterprises worldwide</p>
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <span class="stat-number">99.99%</span>
+                    <span class="stat-label">Platform Uptime</span>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend & APIs</h3>
-                    <ul class="skill-list">
-                        <li>Django</li>
-                        <li>Node.js</li>
-                        <li>Flask & FastAPI</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Design</li>
-                    </ul>
+                <div class="metric-box">
+                    <span class="stat-number">10x</span>
+                    <span class="stat-label">Faster Workflow Execution</span>
                 </div>
-                <div class="skill-category">
-                    <h3>AI & Data Science</h3>
-                    <ul class="skill-list">
-                        <li>Machine Learning</li>
-                        <li>Deep Learning</li>
-                        <li>Computer Vision</li>
-                        <li>Neural Networks</li>
-                        <li>Data Analysis</li>
-                    </ul>
+                <div class="metric-box">
+                    <span class="stat-number">$2.5M+</span>
+                    <span class="stat-label">Saved by Clients</span>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <ul class="skill-list">
-                        <li>Streamlit</li>
-                        <li>Google Business</li>
-                        <li>Git & GitHub</li>
-                        <li>Docker</li>
-                        <li>Cloud Platforms</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <ul class="skill-list">
-                        <li>MongoDB</li>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>Database Design</li>
-                        <li>Data Modeling</li>
-                    </ul>
+                <div class="metric-box">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Global Business Clients</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <!-- Features Section -->
+    <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p>Ready to transform your ideas into reality? Get in touch!</p>
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>📞 Phone</h3>
-                    <p><a href="tel:+919157905812">+91 91579 05812</a></p>
+            <div class="section-header text-center">
+                <span class="section-tag">Powerful Capability</span>
+                <h2>Everything You Need to Scale Modern Business Operations</h2>
+                <p>Replace fragmented tools with a single, intelligent platform built for speed and efficiency.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Workflow Automation</h3>
+                    <p>Build custom multi-step AI workflows without coding. Trigger intelligent actions across your business tools automatically.</p>
                 </div>
-                <div class="contact-card">
-                    <h3>📧 Email</h3>
-                    <p><a href="#">bofiauthier3@gmail.com</a></p>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Predictive Business Analytics</h3>
+                    <p>Turn raw business data into actionable forecasts. Uncover hidden revenue opportunities with real-time ML models.</p>
                 </div>
-                <div class="contact-card">
-                    <h3>🌟 Specialization</h3>
-                    <p>Full Stack Development<br>AI/ML Solutions<br>Business Optimization</p>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Real-time Data Sync</h3>
+                    <p>Keep your databases, CRMs, and internal systems updated instantly across cloud and on-premise infrastructure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Enterprise Security & Compliance</h3>
+                    <p>SOC2 compliant, end-to-end encryption with granular role-based access controls for maximum peace of mind.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>100+ Turnkey Integrations</h3>
+                    <p>Connect seamlessly with Slack, HubSpot, Salesforce, PostgreSQL, Python APIs, and custom webhooks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Smart Team Collaboration</h3>
+                    <p>Shared workspace dashboards, automated notification alerts, and collaborative task delegation built-in.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Simple Setup</span>
+                <h2>Get Up and Running in 3 Easy Steps</h2>
+                <p>No complex engineering required. Start automating your business in minutes.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Connect Your Ecosystem</h3>
+                    <p>Integrate your data sources, databases, and third-party apps with secure 1-click connectors.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Deploy Smart AI Agents</h3>
+                    <p>Select pre-built automation templates or customize prompt triggers for your specific workflows.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Scale & Optimize Results</h3>
+                    <p>Monitor live task execution, optimize performance with AI suggestions, and watch productivity soar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Transparent Pricing</span>
+                <h2>Flexible Plans Designed for Growing Businesses</h2>
+                <p>Start free for 14 days. No hidden fees. Switch or cancel anytime.</p>
+
+                <!-- Billing Toggle -->
+                <div class="pricing-toggle-container">
+                    <span class="toggle-label" id="label-monthly">Monthly</span>
+                    <button class="toggle-switch" id="pricing-toggle" aria-label="Toggle Monthly/Annual Pricing">
+                        <span class="toggle-slider"></span>
+                    </button>
+                    <span class="toggle-label" id="label-annual">Annual <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <p class="plan-desc">Ideal for small teams & startups exploring AI automation.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="29" data-annual="23">29</span>
+                        <span class="period">/ month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Up to 5,000 AI tasks/mo</li>
+                        <li>✓ 3 Active Workflows</li>
+                        <li>✓ Standard Integrations</li>
+                        <li>✓ 5 Team Members</li>
+                        <li>✓ Email Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-full">Start 14-Day Free Trial</a>
+                </div>
+
+                <!-- Pro Plan (Featured) -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Professional</h3>
+                        <p class="plan-desc">Perfect for scaling businesses requiring advanced AI capabilities.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="79" data-annual="63">79</span>
+                        <span class="period">/ month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Up to 50,000 AI tasks/mo</li>
+                        <li>✓ Unlimited Workflows</li>
+                        <li>✓ All 100+ Premium Integrations</li>
+                        <li>✓ 20 Team Members</li>
+                        <li>✓ Real-time Analytics & Forecasting</li>
+                        <li>✓ Priority 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary btn-full">Start 14-Day Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <p class="plan-desc">For large organizations needing custom AI models & dedicated cloud setup.</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="199" data-annual="159">199</span>
+                        <span class="period">/ month</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Unlimited AI Tasks</li>
+                        <li>✓ Dedicated AI Agent Models</li>
+                        <li>✓ Custom API & Webhook Connectors</li>
+                        <li>✓ Unlimited Seats</li>
+                        <li>✓ SOC2 & Custom SLA Guarantee</li>
+                        <li>✓ Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline btn-full">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Got Questions?</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers about BTMI Hermon AI features and subscriptions.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does the 14-day free trial work?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You get full access to all Professional plan features for 14 days without entering any credit card information. At the end of the trial, you can choose a paid plan or downgrade to our free tier.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I integrate BTMI Hermon with my existing software stack?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer pre-built integrations with over 100 popular tools including Slack, Salesforce, PostgreSQL, HubSpot, Zapier, and custom REST APIs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my business data safe and compliant?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Security is our top priority. We use AES 256-bit encryption for all data at rest and in transit. BTMI Hermon is SOC2 Type II certified and fully compliant with GDPR and CCPA.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I upgrade, downgrade, or cancel my plan anytime?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. You can modify or cancel your subscription at any time directly from your dashboard billing settings with one click.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="container cta-container">
+            <h2>Ready to Transform Your Business Operations?</h2>
+            <p>Join over 500+ forward-thinking teams streamlining their workflows with BTMI Hermon AI today.</p>
+            <div class="cta-buttons">
+                <a href="#pricing" class="btn btn-primary btn-large">Get Started Free</a>
+                <a href="#contact" class="btn btn-secondary btn-large">Schedule Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Gauthier Bofi Bendedji. Crafting digital excellence.</p>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">BTMI Hermon<span class="logo-accent">.ai</span></span>
+                </a>
+                <p>Empowering global businesses with next-generation AI workflow automation and cloud intelligence.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">🌐</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="GitHub">💻</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#features">AI Workflows</a></li>
+                    <li><a href="#features">Predictive Analytics</a></li>
+                    <li><a href="#features">Integrations</a></li>
+                    <li><a href="#pricing">Pricing Plans</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">For Startups</a></li>
+                    <li><a href="#">For Enterprise</a></li>
+                    <li><a href="#">Data Science Teams</a></li>
+                    <li><a href="#">Operations & RevOps</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2025 BTMI-Hermon Services Inc. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <!-- Interactive Script -->
     <script>
-        // Smooth scrolling for navigation links
+        // Smooth Scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
+                    // Close mobile nav if open
+                    document.getElementById('nav-links').classList.remove('open');
                 }
             });
         });
 
-        // Add scroll effect to header
+        // Header Background Blur on Scroll
+        const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
             } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.classList.remove('scrolled');
             }
         });
 
-        // Add click animation to service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('click', function() {
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'translateY(-10px)';
-                }, 150);
+        // Mobile Nav Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Pricing Toggle Logic
+        const pricingToggle = document.getElementById('pricing-toggle');
+        const labelMonthly = document.getElementById('label-monthly');
+        const labelAnnual = document.getElementById('label-annual');
+        const amounts = document.querySelectorAll('.amount');
+        let isAnnual = false;
+
+        pricingToggle.addEventListener('click', () => {
+            isAnnual = !isAnnual;
+            pricingToggle.classList.toggle('annual', isAnnual);
+
+            if (isAnnual) {
+                labelMonthly.classList.remove('active');
+                labelAnnual.classList.add('active');
+            } else {
+                labelMonthly.classList.add('active');
+                labelAnnual.classList.remove('active');
+            }
+
+            amounts.forEach(amount => {
+                const targetVal = isAnnual ? amount.dataset.annual : amount.dataset.monthly;
+                amount.textContent = targetVal;
             });
         });
 
-        // Add typing effect to hero title
-        const heroTitle = document.querySelector('.hero h1');
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        
-        let i = 0;
-        function typeWriter() {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        }
-        
-        setTimeout(typeWriter, 1000);
+        // FAQ Accordion Interaction
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            questionBtn.addEventListener('click', () => {
+                const isOpen = item.classList.contains('active');
+
+                // Close all FAQ items
+                faqItems.forEach(i => i.classList.remove('active'));
+
+                // If not previously open, open it
+                if (!isOpen) {
+                    item.classList.add('active');
+                }
+            });
+        });
     </script>
 </body>
 </html>
